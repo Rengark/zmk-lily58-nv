@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: v3.5.0+zmk-fixes
       clone-depth: 1
-      import:
+      import: true
         name-blocklist:
           - ci-tools
           - hal_altera
