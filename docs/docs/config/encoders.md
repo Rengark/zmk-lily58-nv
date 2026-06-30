@@ -3,7 +3,7 @@ title: Encoder Configuration
 sidebar_label: Encoders
 ---
 
-See the [Encoders feature page](../features/encoders.md) for more details, including instructions for adding encoder support to a board.
+See the [Encoders informational page](../features/encoders.md) for more details, including instructions for adding encoder support to a board.
 
 See [Configuration Overview](index.md) for instructions on how to change these settings.
 
@@ -29,7 +29,7 @@ If `CONFIG_EC11` is enabled, exactly one of the following options must be set to
 
 ### Devicetree
 
-#### Keymap Sensor Config
+#### Keymap sensor config
 
 For shields/boards that export a `sensors` node configuration label, both global and per-sensor settings can be set by overriding the properties there.
 
@@ -55,11 +55,7 @@ Per sensor overrides can be added with ordered nested nodes with the correct ove
 };
 ```
 
-:::note
-
 The names of the child nodes are not important, and are applied in order to the sensors listed in the `sensors` property of the sensors node.
-
-:::
 
 Applies to the node and child nodes of: `compatible = "zmk,keymap-sensors"`
 
@@ -69,7 +65,7 @@ Definition file: [zmk/app/drivers/zephyr/dts/bindings/zmk,keymap-sensors.yaml](h
 | ----------------------- | ---- | --------------------------------------------------------------- | ------- |
 | `triggers-per-rotation` | int  | Number of times to trigger the bound behavior per full rotation |         |
 
-#### EC11 Nodes
+#### EC11 nodes
 
 Applies to: `compatible = "alps,ec11"`
 
